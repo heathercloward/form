@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BackOffice Associates Terms and Conditions</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+      body {
+          font-family: 'Roboto';
+          color: #003744;
+      }
+
+      h1 {
+          text-align: center;
+          margin-bottom: 1em;
+      }
+
+      .navbar {
+          background-color: #003744;
+          height: 5em;
+      }
+      
+      .container {
+          background-color: #ffffffa3;
+          padding: 4em;
+          margin: 0;
+          position: absolute;
+          top: 56%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      .container-fluid {
+          background-image: url("IGC_Login_Background.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          height: 82em; 
+      }
+
+      img.footerLogo {
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        width: 10em;
+        bottom: auto;
+        top: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      img.formName {
+          width: 22em;
+          margin-left: 30%;
+          margin-bottom: 1em;
+      }
+
+      .form-group {
+        font-size: 1.4em;
+      }
+
+      /* The Modal (background) */
+     .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+     .modal-content {
+        background-color: #fefefe;
+        margin: 2% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; /* Could be more or less, depending on screen size */
+        height: 50em;
+        }
+
+        /* The Close Button */
+        .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .outline1::before {
+            content: "1.";
+        }
+
+        .outline1, .outline2, .outline3, .outline4, .outline5, .outline7, .outline8, .outline9, .outline10, .outline11, .outline12, .outline13, .outline19 {
+            text-indent: -30px; 
+        }
+
+        .outline2::before {
+            content: "2.";
+        }
+
+        .outline3::before {
+            content: "3.";
+        }
+
+        .outline4::before {
+            content: "4.";
+        }
+
+        .outline5::before {
+            content: "5.";
+        }
+
+        .outline7::before {
+            content: "7.";
+        }
+
+        .outline8::before {
+            content: "8.";
+        }
+
+        .outline9::before {
+            content: "9.";
+        }
+
+        .outline10::before {
+            content: "10.";
+        }
+
+        .outline11::before {
+            content: "11.";
+        }
+
+        .outline12::before {
+            content: "12.";
+        }
+
+        .outline13::before {
+            content: "13.";
+        }
+
+        .outline19::before {
+            content: "19.";
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .docLogo {
+            width: 13em; 
+            margin-bottom: 3em; 
+            margin-left: 36%;
+        }
+
+        input:not(:focus):invalid {
+            outline: 2px solid red;
+        }
+
+        input:invalid ~ .form-control-feedback::before {
+            content: "This is a required field."
+        }
+
+        input:focus:invalid {
+            outline: none;
+        }
+
+        #Name:focus:invalid + #nameFeedback::before {
+            content: "Enter your name."
+        }
+
+        #Title:focus:valid + #titleFeedback::before {
+            content: "Enter your title. "
+        }
+
+        #CompanyName:focus:invalid + #companyFeedback::before {
+            content: "Enter your Company Name. "
+        }
+
+        #Email2:focus:invalid + #emailFeedback2::before {
+            content: "This must match the above email address."
+        }
+
+        #yesno:focus:invalid ~ #yesnoFeedback::before {
+            content: "Check the checkbox to agree to the terms.";
+            text-align: right;
+        }
+
+        .form-control-feedback {
+            font-size: .7em;
+            color: #4d4d4d;
+        }
+
+        #scrollInstructions {
+            font-size: 1.5em;
+            color: red;
+        }
+
+        #register, #print {
+            display: block;
+            margin-left: -1.2em;
+            margin-top: 1em;
+        }
+
+        #print {
+            display: inline;
+        }
+
+
+        .modalForm {
+            margin: 1em;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .container-fluid {
+                height: 82em;
+            }
+
+            .modal-content {
+                width: 86%;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            img.formName {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;;
+            }
+            
+        }
+
+        @media only screen and (max-width: 576px) {
+            img.formName {
+                width: 80%;
+            }
+            
+            .container-fluid {
+                height: 80em;
+            }
+
+            .container {
+                top: 88%;
+            }
+
+
+            .modal-content {
+                width: 100%;
+                height: 36em;
+            }
+
+            .docLogo {
+                margin-left: 16%;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            .container {
+                top: 88%;
+            }
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printpopup, #printpopup * {
+                visibility: visible;
+            }
+            #printpopup {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 0;
+                background-color: white;
+                padding: 15px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+}
+         
+  </style>
+ <script>
+
+window.addEventListener("load", function() {
+     // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("trigger");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    var nameOK = false, emailOK = false;
+    var re = /[|&;$%@"<>()+,]/g;
+    var emre = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    document.getElementById("Name").addEventListener("change", function() {
+        this.value = this.value.replace(re, "");
+        if (this.value) nameOK = true;
+        verified();
+    });
+    document.getElementById("Title").addEventListener("change", function() {
+        this.value = this.value.replace(re, "");
+    });
+
+    var verifyEmail = function() {
+        emailOK = emre.test(String(document.getElementById("Email").value).toLowerCase()) 
+            && emre.test(String(document.getElementById("Email2").value).toLowerCase()) 
+            && (document.getElementById("Email").value === document.getElementById("Email2").value);
+        verified();
+    }
+    document.getElementById("Email").addEventListener("change", verifyEmail);
+    document.getElementById("Email2").addEventListener("change", verifyEmail);
+
+    var verified = function() {
+        if (nameOK && emailOK) {
+            btn.removeAttribute("disabled");
+        } else {
+            btn.setAttribute("disabled", "true");
+        }
+    }
+
+    // When the user clicks on the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+
+        $(modal).keyup(function(event){
+	        if (event.keyCode == 27){
+		        // Close the modal/menu
+		        modal.style.display = "none";
+                //  Return focus to the element that invoked it 
+		        btn.focus();
+	        }
+        });
+    }
+});
+ </script>
+
+</head>
+  <body>
+    <div class="container-fluid">
+    <div class="container" >
+    <img class="formName" src="IGC_Logo-Vertical.svg">
+    <h1>BackOffice Associates Terms and Conditions</h1>
+    <form autocomplete="on" action="" >
+        <div class="form-group">
+            <label for="CompanyName">Company Name: McCrackin</label>
+            
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="name"  required class="form-control" id="Name" placeholder="Name" autofocus>
+            <span id="nameFeedback" class="form-control-feedback" aria-hidden="true"></span>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email"  required class="form-control" id="Email" placeholder="Email Address" >
+            <span id="emailFeedback" class="form-control-feedback" aria-hidden="true"></span>
+        </div>
+        <div class="form-group">
+            <label for="Email2">Verify Email</label>
+            <input type="email"  required class="form-control" id="Email2" placeholder="Verify Email Address">
+            <span id="emailFeedback2" class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="title"  class="form-control" id="Title" placeholder="Title">
+            <span id="titleFeedback" class="form-control-feedback" aria-hidden="true"></span>
+        </div>  
+    </form>
+    <button id="trigger" class="btn btn-info" disabled>Agree to Terms</button> 
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="scrollInstructions">Scroll to the bottom to agree to the terms.</span><span class="close" tabindex="0">&times;</span>
+              <!--<embed  id="agreement" src="NACSTCv2.0.pdf" type="application/pdf" width="100%" height="100%">-->
+               
+            <div style="overflow-y:scroll;" id="terms" tabindex="0" autofocus>
+            <img class="docLogo" src="BOA_Logo-223x50-Blue.png">
+            <h1>CLOUD SERVICES TERMS AND CONDITIONS</h1>
+            <p><strong>PLEASE READ CAREFULLY THESE TERMS AND CONDITIONS (COLLECTIVELY WITH THE EXHIBITS HERETO, THIS “AGREEMENT,”). THIS AGREEMENT APPLIES TO YOUR USE OF THE BACKOFFICE ASSOCIATES, LLC (“BACKOFFICE”) CLOUD SERVICES DESCRIBED HEREIN. BY (i) USING ALL OR ANY PORTION OF SUCH CLOUD SERVICES OR (ii) COMPLETING AN ORDER FOR SUCH CLOUD SERVICES WHICH INCORPORATES BY REFERENCE THIS AGREEMENT, THE PERSON OR ENTITY YOU REPRESENT, THE CUSTOMER, ACCEPTS AND AGREES TO AND BECOMES A PARTY TO THIS AGREEMENT. YOU REPRESENT AND WARRANT THAT YOU HAVE AUTHORITY TO LEGALLY BIND CUSTOMER. IF YOU DO NOT UNCONDITIONALLY AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, YOU MAY NOT USE THE CLOUD SERVICES. IF YOU HAVE ENTERED INTO A SEPARATE WRITTEN AGREEMENT WITH BACKOFFICE FOR USE OF THE CLOUD SERVICES, THEN SUCH AGREEMENT SHALL PREVAIL OVER ANY CONFLICTING TERMS OR CONDITIONS IN THIS AGREEMENT, WITH RESPECT TO SUCH CLOUD SERVICES NAMED IN SUCH AGREEMENT.</strong></p>
+            <p>This Agreement is by and between BackOffice and Customer (as defined below) and is effective as of the date any Cloud Service (as defined below) governed by the use of this Agreement was first ordered by Customer (the “Effective Date”). Each of BackOffice and Customer are sometimes referred to herein as a “Party” and collectively as the “Parties.” In consideration of the mutual promises and upon the terms and conditions set forth below, the Parties agree as follows:</p>
+
+            <ol type="1">
+                <li>Definitions.
+                <ul style="list-style-type: none">
+                    <li class="outline1">1. “Applications” means BackOffice products, software products, services or other databases, applications or interfaces (APIs).</li>
+                    <li class="outline1">2. Authorized User(s)” means Customer’s employees, consultants, contractors and managed outsourcers who are permitted to use the Cloud Services solely for the benefit of Customer.</li>
+                    <li class="outline1">3. “Cloud Services” means the IGC, the Software Hosting Services and/or the Universal Connect Services.</li>
+                    <li class="outline1">4. “Confidential Information” means this Agreement, all software listings, documentation, information, data, drawings, benchmark tests, specifications, trade secrets, methodology, object code and machine-readable copies of software, source code copies of software, and any other intellectual property or proprietary information supplied to Customer by BackOffice or by Customer to BackOffice which is clearly marked as “confidential” if in tangible form, or identified as “confidential” if orally disclosed.</li>
+                    <li class="outline1">5. “Connection” means the deployment of a software object between an Application or any software in order to exchange data between such end points. The type of Connection(s) and its class shall be identified on the relevant Order.</li>
+                    <li class="outline1">6. “Customer” means the single legal entity indicated in an Order as ordering an Applicable Offering or if no such entity has been indicated, the legal entity which first accessed or otherwise used the Cloud Services and thereby accepted this Agreement.</li>
+                    <li class="outline1">7. “Distribution Date” of the Cloud Services means the date BackOffice made available for use the applicable Cloud Services to Customer.</li>
+                    <li class="outline1">8. “Documentation” means the user guides, operation manuals, specifications and other related on-line information and materials approved by BackOffice relating to the use of the Cloud Services.</li>
+                    <li class="outline1">9. Error” means a programming error, logic error, or defect within the Cloud Services that causes it to operate incorrectly or otherwise not in conformity with the associated Documentation and that is reproducible by BackOffice from the deliverables furnished by Customer.</li>
+                    <li class="outline1">10. “Hosted Infrastructure Services” means third-party data centers, server(s), computer network(s), hardware, and system software configuration on which BackOffice or its licensors provide Customer remote access to BackOffice Applications and Customer data, located at a facility selected by BackOffice.</li>
+                    <li class="outline1">11. “Information Governance Cloud Platform” or “IGC” means the cloud-based, object code version of BackOffice’s core proprietary technology for data management, stewardship and orchestration, including without limitation, governance policy management, process and policy design, data quality tools, business glossary, rules management, metadata management, architecture inspection and analysis.</li>
+                    <li class="outline1">12. “Intellectual Property Rights” means all trade secrets, patents and patent applications, trade marks (whether registered or unregistered and including any goodwill acquired in such trade marks), service marks, trade names, business names, internet domain names, e-mail address names, copyrights (including rights in computer software), moral rights, database rights, design rights, rights in know- how, rights in confidential information, rights in inventions (whether patentable or not) and all other intellectual property and proprietary rights (whether registered or unregistered, and any application for the foregoing), and all other equivalent or similar rights which may subsist anywhere in the world.</li>
+                    <li class="outline1">13. “Order” means a written document whereby Customer orders a subscription to one or more Cloud Services, which Order may contain specific terms and conditions with respect to the Cloud Service(s) ordered.</li>
+                    <li class="outline1">14. “Software Hosting Services” means the hosted BackOffice Application(s) and the Hosted Infrastructure Services.</li>
+                    <li class="outline1">15. “Subscription Term” means the period of time, as agreed upon in an Order, during which Customer may access the Cloud Services. In the absence of an Order or in the absence of such information set forth in an Order, the Subscription Term shall be  deemed to begin on the Distribution Date and end on the first anniversary thereof.</li>
+                    <li class="outline1">16. “Universal Connect Services” means BackOffice’s construction, configuration, deployment and management of hosted technology and application Connections (and components thereof) deployed and configured by BackOffice in order to permit the exchange of certain Customer data residing in Applications and data.</li>
+                    <li class="outline1">17. “Use Restrictions” means any use restriction that is set forth herein or in an Order, which may include maximum production instances, maximum number of Authorized Users permitted to access the Cloud Services, maximum number of Connections or other restrictions.</li>
+                </ul>
+                </li>
+                <li>Requesting a Subscription to Cloud Services.
+                    <ul style="list-style-type:none">
+                    <li class="outline2">1. Orders. During the Term, the Parties may enter into one or more Orders setting forth the specific terms and conditions applicable to Customer’s order of Cloud Services. Each Order accepted by BackOffice shall be incorporated into and made part of this Agreement by reference. In the event of any conflict between the provisions of this Agreement and the terms of any Order(s), the conflict shall be resolved in the following order of priority of interpretation: (i) the Order(s) and (ii) this Agreement.</li>
+                    <li class="outline2">2. Customer Acceptance of Orders. Customer may manifest its acceptance of an Order by (i) signing an Order, (ii) issuing a purchase order for the amounts set forth in an Order (whether or not such purchase order references such Order by number or other reference), or (iii) accepting or using the Cloud Services.</li>
+                    </ul>
+                </li>
+                <li>Subscription to Cloud Services.
+                    <ul style="list-style-type:none">
+                        <li class="outline3">1. Subject to the terms and conditions contained in the Agreement and the specific terms and conditions in an Order, BackOffice will during the Subscription Term: (i) provide the Cloud Services up to the maximum number of Authorized Users and, if applicable, the maximum number of Connections (in each case, as set forth in an Order) via remote internet access solely for Customer’s internal business operations and solely in accordance with applicable Documentation; (ii) allow Authorized Users to use and access the Cloud Services and the Documentation for the above referenced purposes; and (iii) manage the Cloud Services during the Subscription Term. BackOffice reserves the right to modify its technology underlying the Cloud Services at any time and agrees to use commercially reasonable efforts to notify Customer of any such modifications to the extent that such modifications negatively affect functionality.
+                            <ul style="list-style-type:none">
+                                <li class="outline3">1.1. Connectivity. BackOffice will be responsible for maintaining connectivity from its Cloud Services to the Internet. Customer is responsible for providing connectivity to the Internet for itself and its Authorized Users. Customer shall also be responsible for ensuring that latency and available bandwidth from the user’s desktop to BackOffice’s hosted routers is adequate to meet Customer’s desired level of performance. If Customer requires a VPN or private network connection to the Cloud Services, Customer is responsible for all costs associated with any specialized network connectivity required by Customer.</li>
+                                <li class="outline3">1.2. Authorized Users. Customer is solely responsible for creating individual Authorized User accounts in order to allow access to the Cloud Services and Documentation up to the maximum number of Authorized Users as indicted in an Order. Access to the Cloud Services and Documentation by such Authorized User(s) is solely on behalf of and for the benefit of Customer. Customer shall not authorize access to or permit use of the Cloud Services, or Documentation by persons other than Authorized Users. Customer shall be responsible for all acts and omissions of its Authorized Users and any act or omission by any such Authorized User which,  if undertaken by  Customer would constitute a breach of the Agreement, shall be deemed a breach of the Agreement. Customer shall make its Authorized Users aware of the provisions of the Agreement and shall cause all Authorized Users to comply with such provisions. Customer is responsible for all activities that occur under its Authorized User accounts, regardless of whether the activities are authorized by Customer or undertaken by Customer, its employees or any third party, and BackOffice and its affiliates are not responsible for unauthorized access to any Customer account.</li>
+                            </ul>
+                        </li>
+                        <li class="outline3">2. Documentation. BackOffice will deliver to Customer, as soon as is practicable after the Distribution Date, one printed or machine-readable copy of the Documentation or make such Documentation available on its support website. Customer may not reproduce the Documentation without BackOffice’s express written permission.</li>
+                        <li class="outline3">3. Universal Connect Services End User Terms. Customer’s use of the Universal Connect Services is subject to the additional end user terms and conditions set forth in Exhibit B hereto. In the event of any conflict in terms within this Agreement, Exhibit B shall supersede.</li>
+                    </ul>
+                </li>
+                <li>Customer Responsibilities.
+                    <ul style="list-style-type:none">
+                        <li class="outline4">1. Security. In connection with Customer’s use of the Cloud Services, Customer shall: (a) comply with all applicable laws, court orders, rules and regulations; (b) comply with applicable BackOffice policies for access to and use of the Cloud Services, including but not limited to, its acceptable use and privacy policy; (c) use reasonable security precautions for providing access to the Cloud Services by its Authorized Users; (d) cooperate with BackOffice’s investigation of outages, security problems, unauthorized use of the Cloud Services or any suspected breach of the Agreement, the acceptable use or privacy policy, or any applicable law, court order, rule or regulation; and (e) promptly notify BackOffice of any known or suspected unauthorized use of Customer’s account, the Cloud Services or any other breach of security.</li>
+                        <li class="outline4">2. Branding. Customer shall not delete, alter, cover, or distort any copyright, trademark, any printed or on-screen proprietary or legal notice, or other proprietary rights notice placed by BackOffice on or in the Cloud Services or Documentation.</li>
+                        <li class="outline4">3. Credentials. Customer and its Authorized Users shall be responsible for maintaining the confidentiality and security of all passwords and other access protocols required in order to access the Cloud Services, if applicable.</li>
+                    </ul>
+                </li>
+                <li>Use and Access Restrictions.
+                    <ul style="list-style-type:none">
+                        <li class="outline5">1. Customer agrees that it will not itself, or through any parent, subsidiary, affiliate, agent or other third party:
+                            <ul style="list-style-type:none">
+                                <li class="outline5">1.1. sell, lease, license, sublicense, or otherwise encumber any portion of the Cloud Services or Documentation;</li>
+                                <li class="outline5">1.2. decompile, disassemble, or reverse engineer any portion of the Cloud Services or attempt to discover any source code or underlying ideas or algorithms of the Cloud Services;</li>
+                                <li class="outline5">1.3. create any derivative work based on the Cloud Services or any BackOffice Confidential Information;</li>
+                                <li class="outline5">1.4. use any Cloud Services to provide processing services to third parties, commercial timesharing, rental or sharing arrangements, or on a ‘service bureau’ basis or otherwise use or allow others to use the Cloud Services for the benefit of any third party;</li>
+                                <li class="outline5">1.5. use the Cloud Services to store or transmit infringing, libelous, obscene, threatening, or otherwise unlawful or tortious material, including without limitation material harmful to children or violating third party intellectual property or privacy rights;</li>
+                                <li class="outline5">1.6. provide, disclose, divulge or make available to, or permit use of any Cloud Service by persons other than Customer’s Authorized Users who have signed a confidentiality agreement consistent with the terms and provisions herein, without BackOffice’s prior written consent;</li>
+                                <li class="outline5">1.7. use Cloud Services, or allow the transfer, transmission, export, or re-export of any Cloud Services or portion thereof in violation of any export control laws or regulations administered by the U.S. Commerce Department, OFAC, or any other government agency; or</li>
+                                <li class="outline5">1.8. interfere with or disrupt the integrity or performance of the Cloud Services. All the limitations and restrictions on any Cloud Service in this Agreement also apply to the Documentation.</li>
+                            </ul>
+                        </li>
+                        <li class="outline5">2. No Implied Licenses. Customer acknowledges that there are no licenses granted by implication under the Agreement. BackOffice retains and reserves all right, title and interest in and to the Cloud Services, the Documentation and all Intellectual Property Rights therein, and retains all rights, title and interest (including but not limited to Intellectual Property Rights) in the Cloud Services not specifically granted to Customer. Customer acknowledges that, as between the Parties, BackOffice owns all Intellectual Property Rights and proprietary interests that are embodied in, or practiced by, the Services, and the Documentation. Any license granted by BackOffice pursuant to this Agreement is only for Intellectual Property Rights that are owned by BackOffice or that BackOffice has a right to sublicense.</li>
+                        <li class="outline5">3. No Source Code. Customer acknowledges the rights granted under this Agreement with respect to the Cloud Services are intended to apply only to the compiled, object code format of any software provided therein, and are not intended as licenses to obtain or use any source code.</li>
+                    </ul>
+                </li>
+                <li>Subscription Fees. In consideration of the rights granted herein, Customer shall pay BackOffice the subscription fees specified in the applicable Order(s). Unless otherwise set forth in the applicable Order, Customer agrees to pay the applicable subscription fees in accordance with the terms of the Agreement.</li>
+                <li>Fees and Payments.
+                    <ul style="list-style-type:none">
+                        <li class="outline7">1. Invoices. Customer shall pay BackOffice for the Cloud Services in accordance with the fees set forth in the applicable Order. BackOffice hereby reserves the right to modify any fees by providing Customer with written notice within ninety (90) days of such notification. All payments for fees and expenses must be made by Customer within thirty (30) days of the date of invoice.</li>
+                        <li class="outline7">2. Manner of Payment; Taxes. Unless otherwise set forth in an applicable Order, all amounts due hereunder shall be paid in the U.S. and in U.S. dollars Customer agrees to pay or reimburse BackOffice for all transportation charges, federal, state, dominion, provincial or local sales taxes, use taxes, value-added taxes, fees or duties arising out of this Agreement or the transaction contemplated by this Agreement (other than taxes on the net income of BackOffice). Customer agrees that any tax liability and other costs resulting from assignments of BackOffice personnel exceeding one year on a project site will be a reimbursable expense by Customer. BackOffice will, in good faith, manage the length of consulting assignments to mitigate the risk of increased tax liabilities. Customer and BackOffice shall cooperate in good faith to minimize taxes to the extent legally permissible.</li>
+                        <li class="outline7">3. Late Payments. Customer shall pay BackOffice one and one-half percent (1½%) interest per month or the highest rate permitted by law, whichever is greater, on the outstanding balance of any fees or expenses not paid within thirty (30) days of the date of invoice. Customer shall be responsible for all costs incurred by BackOffice in order to recover payment of Customer’s account, including without limitation, all professional fees and legal costs. Without waving or prejudicing any other rights or remedies, BackOffice shall have the right to suspend or delay the provision of any Services on a day-for-day basis equal to the number of days a payment due hereunder is past due.</li>
+                        <li class="outline7">4. Cloud Services Commencement. BackOffice will grant Customer access to the Cloud Services as soon as practical following BackOffice’s receipt and acceptance of an Order. If Customer’s procedures require that an invoice be submitted against a purchase order before payment can be made, Customer will be responsible for issuing such purchase order at least thirty (30) days before the payment date.</li>
+                    </ul>
+                </li>
+                <li>Term and Termination.
+                    <ul style="list-style-type:none">
+                        <li class="outline8">1. Term. The term of this Agreement will commence on the Effective Date and will continue for a period of three (3) years thereafter, unless earlier terminated in accordance with this Section 8.1 (the “Initial Term”), and will automatically renew for successive one (1) year terms (each, a “Renewal Term”), unless either Party provides written notice of its desire not to renew at least thirty (30) days prior to  the expiration of the then-current term (the Initial Term, together with any Renewal Terms, collectively, the “Term”).</li>
+                        <li class="outline8">2. Termination for Breach. Either Party may, at its option, terminate this Agreement in the event of a material breach by the other Party. Such termination may be effected only through a written notice to the breaching Party, specifically identifying the breach or breaches on which such notice of termination is based. The breaching Party will have a right to cure such breach or breaches within thirty (30) days of receipt of such notice, and this Agreement will terminate in the event that such cure is not made within such thirty (30)-day period.</li>
+                        <li class="outline8">3. Termination for Non-Payment. Any obligation to provide Services pursuant  to this  Agreement  may be terminated by BackOffice if Customer (i) fails to pay any amount due to BackOffice under an Order within thirty (30) days after BackOffice gives written notice of such non- payment, or (ii) commits a material non-monetary breach of this Agreement, which breach, if capable of being cured, is not cured within thirty (30) days of Customer’s receipt of written notice of such breach by BackOffice.</li>
+                        <li class="outline8">4. Termination Upon Bankruptcy or Insolvency. Each Party shall immediately give written notice to the other Party and such Party may, at its option, terminate this Agreement immediately upon written notice to the other Party, in the event (i) that a Party becomes insolvent or unable to pay its debts when due; (ii) such Party discontinues it business; or (ii) a receiver is appointed or there is an assignment for the benefit of such Party’s creditors.</li>
+                        <li class="outline8">5. Effect of Termination. Upon any termination of this Agreement, Customer will (i) immediately discontinue all use of each Applicable Offering and any BackOffice Confidential Information; (ii) promptly return or destroy any and all BackOffice Confidential Information and (iii) promptly pay to BackOffice all amounts due and payable under this Agreement. There shall be no right of set-off.</li>
+                        <li class="outline8">6. Survival. Any provision of this Agreement that expressly or by implication is intended to come into or continue in force on or after termination of the Agreement along with any accrued rights to payment shall remain in full force shall survive the termination of this Agreement, regardless of the reason for termination.</li>
+                    </ul>
+                </li>
+                <li>Warranty.
+                    <ul style="list-style-type:none">
+                        <li class="outline9">1. Cloud Services Warranty. BackOffice warrants that the operation of the Cloud Services will substantially conform to its Documentation. BackOffice further warrants that the IGC will meet or exceed the service levels set forth in Exhibit A of this Agreement.</li>
+                        <li class="outline9">2. Remedies. If the Cloud Services do not perform as warranted, BackOffice shall undertake to correct the non- conforming part of the Cloud Services, or if correction is reasonably not possible, replace such non-conforming part of the Cloud Services free of charge. If the Cloud Services do not perform as warranted, then BackOffice agrees to correct or provide a workaround for reproducible errors in the Cloud Services as promptly as commercially reasonable. EXCEPT AS SET FORTH IN THIS SECTION 9.2, THE FOREGOING ARE CUSTOMER’S SOLE AND EXCLUSIVE REMEDIES FOR BREACH OF WARRANTY.</li>
+                        <li class="outline9">3. The warranty set forth above is made to and for the benefit of Customer only and applies only if (i) the Cloud Services has been properly configured, and has been used at all times in accordance with the Documentation and the Agreement; (ii) any updates, alterations, additions or other modifications to the Cloud Services have been made by BackOffice and no other person or entity; and (iii) Customer has not made  or caused to be  made updates, alterations, additions or other modifications to the Cloud Services that cause it to deviate from the Documentation. The foregoing warranty in Section 9.1 shall not apply to the extent that the Cloud Services are used or interfaced with other software, data or operating systems which are not functioning properly or if the Cloud Services have been modified in a manner not authorized by BackOffice.</li>
+                        <li class="outline9">4. EXCEPT AS SET FORTH IN THIS SECTION 9 BACKOFFICE MAKES NO OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY REGARDING OR RELATING TO ANY SOFTWARE OR CLOUD SERVICE, THE DOCUMENTATION, OR ANY OTHER MATERIALS OR SERVICES FURNISHED OR PROVIDED  TO  CUSTOMER  UNDER  THIS  ANNEX. SPECIFICALLY, BACKOFFICE DOES NOT WARRANT THAT THE CLOUD SERVICES WILL BE ERROR FREE OR WILL PERFORM IN AN UNINTERRUPTED MANNER. TO THE MAXIMUM EXTENT ALLOWED BY LAW, BACKOFFICE SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, INFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE (EVEN IF BACKOFFICE HAD BEEN INFORMED OF SUCH PURPOSE) WITH RESPECT TO ANY CLOUD SERVICE.</li>
+                    </ul>
+                </li>
+                <li>Customer Data; Security; Privacy/Data Protection.
+                    <ul style="list-style-type:none">
+                        <li class="outline10">1. Rights to Customer Data. Prior to storing, processing, uploading, distributing or linking to any Customer data using the Cloud Services, Customer shall, at its own expense, obtain all third-party consents and/or permissions that may be necessary and appropriate with respect to such Customer data or required by this Section Error! Reference source not found.. Customer hereby represents and warrants that it owns or otherwise has sufficient rights to grant BackOffice access to and use of Customer data in accordance with the terms of this Annex. BackOffice will not access or use any Customer data except with Customer’s prior written consent, as necessary to maintain or provide the Cloud Services, or as necessary to comply with the law or a binding order of a governmental body, provided however, that BackOffice will use data related to Customer’s account, such as resource identifiers, metadata tags, security and access roles, rules, usage policies, permissions, usage statistics and analytics in connection with providing the Cloud Services. Customer further agrees to obtain the right to allow BackOffice to copy, store, process, analyze and display such Customer data through the Cloud Services and hereby grants to BackOffice a non-exclusive, non-transferable right and license to use Customer data during the Term for the limited purposes of performing BackOffice’s obligations under this Annex and to collect and use any such data, in non-user specific and aggregated statistical form, for the development and maintenance of the BackOffice products or services and for BackOffice’s other business purposes.</li>
+                        <li class="outline10">2. Security. BackOffice uses third-party data centers located in the United States in order to provide IGC and the Software Hosting Services, and Customer hereby consents to the storage of any Customer data provided to IGC or the Hosting Services in the United States. BackOffice shall maintain appropriate administrative, physical, and technical safeguards for protection of the security, confidentiality and integrity of the Cloud Services, and agrees to implement reasonable and appropriate measures designed to help Customer secure Customer data against accidental or unlawful loss, access or disclosure.
+                            <ul style="list-style-type:none">
+                                <li class="outline10">2.1. Customer has primary access and control over its dedicate portion of the IGC. Customer is responsible for properly configuring and using the Cloud Services and otherwise taking appropriate action to secure, protect and backup its Authorized User accounts and Customer data in a manner that will provide appropriate security and protection, which might include use of encryption to protect Customer data from unauthorized access and routinely archiving Customer data. Customer shall be solely responsible for, and assumes the risk of, any problems resulting from, the content, accuracy, completeness, consistency integrity, legality, reliability, and appropriateness of all Customer data. BackOffice will conduct backups daily and retain the backups for 7 days to permit recovery of Information Governance Cloud Platform after a disaster or catastrophic failure. BackOffice does not have the capability to restore prior data values for a specific customer. Customer will ensure that Customer data and its and the Authorized Users’ use of Customer data or the Information Governance Cloud Platform will not violate any of BackOffice acceptable use or privacy policies or any applicable law.</li>
+                            </ul>
+                        </li>
+                        <li class="outline10">3. Customer shall be the data controller and BackOffice shall be a data processor with respect to any Customer data processed via the Cloud Service. BackOffice shall process Customer data via the Cloud Service on behalf of Customer only in accordance with the terms of the Agreement and any instructions reasonably given by Customer from time to time.</li>
+                    </ul>
+                </li>
+                <li>Confidentiality.
+                    <ul style="list-style-type:none">
+                        <li class="outline11">1. Each Party acknowledges that the Confidential Information constitutes valuable trade secrets and each Party agrees that it shall use the Confidential Information of the other Party solely in accordance with the provisions of this Agreement and it will not disclose, or permit to be disclosed, the same directly or indirectly, to any third party without the other Party’s prior written consent. Each Party agrees to exercise due care in protecting the Confidential Information from unauthorized use and disclosure. However, neither Party bears any responsibility for safeguarding any information that it can document in writing (i) is in the public domain through no fault of its own, (ii) was properly known to it, without restriction, prior to disclosure by disclosing Party, (iii) was properly disclosed to it, without restriction, by another person with the legal authority to do so, (iv) is independently developed by receiving Party without use or reference to disclosing Party’s Confidential Information or (v) is required to be disclosed pursuant to a judicial or legislative order or proceeding; provided that, to the extent permitted by and practical under the circumstances, receiving Party provides to disclosing Party prior notice of the intended disclosure and an opportunity to respond or object to the disclosure or if prior notice is not permitted or practical under the circumstances, prompt notice of such disclosure.</li>
+                        <li class="outline11">2. In the event of actual or threatened breach of the provisions of Section 11, or the scope and/or restrictions to the access rights granted in Section 3 or Section 14 the non- breaching Party will be entitled to immediate injunctive and other equitable relief, without bond and without the necessity of showing actual damage.</li>
+                    </ul>
+                </li>
+                <li>Indemnification for Infringement.
+                    <ul style="list-style-type:none">
+                        <li class="outline12">1. BackOffice shall indemnify, defend, and hold Customer, its officers, directors, employees and agents harmless from and against any losses, liabilities, damages and expense (including reasonable attorneys’ fees) (a “Loss”) incurred on account of a claim, action or allegation brought against Customer by a third party (each, a “Claim”) to the extent the Claim alleges that the authorized use of the Cloud Services infringe any issued U.S. patent, copyright, trade secret or other proprietary right of any third party. BackOffice shall pay any final judgment awarded against Customer as a result of any such Claim, provided that: (a) Customer gives prompt written notice to BackOffice of any such Claim; (b) Customer gives BackOffice the sole and exclusive right to defend and/or settle any such Claim; and (c) Customer gives BackOffice such reasonable assistance and information as BackOffice may reasonably require to settle or oppose such claims.</li>
+                        <li class="outline12">2. In the event any such infringement, claim, action, or allegation is brought or threatened, BackOffice may, at its sole option and expense: (i) procure for Customer the right to continue use of the Cloud Services or the infringing portion thereof; or (ii) modify, amend or replace the Cloud Services or infringing part thereof with other software having substantially the same or better capabilities;</li>
+                        <li class="outline12">3. If neither of the remedies in clause 12.2 of this Agreement are commercially practicable with respect to the any infringing Cloud Services, then BackOffice may terminate the Agreement (or any part thereof) and Customer’s rights with respect to the Cloud Services and refund to Customer an amount equal to the Subscription Fees paid pursuant to the applicable Order with respect to the infringing portion of the Cloud Services, minus a portion of the License Fees attributable to the period between the Distribution Date of such Cloud Services and the date BackOffice notifies Customer of its election to terminate the Agreement.</li>
+                        <li class="outline12">4. The foregoing obligations shall not apply to the extent the infringement arises as a result of: (ii) modifications to the Cloud Services made by any party other than BackOffice or BackOffice’s authorized representative; (ii) the use of the Cloud Services in combination with software, hardware or other products not provided by BackOffice.</li>
+                        <li class="outline12">5. This Section 12 states the entire liability of BackOffice, and Customer’s sole and exclusive remedies, with respect to infringement of any patent, copyright, trade secret or other proprietary right.</li>
+                    </ul>
+                </li>
+                <li>Limitation of Liability.
+                    <ul style="list-style-type:none">
+                        <li class="outline13">1. IN NO EVENT WILL BACKOFFICE OR ITS SUBCONTRACTORS BE LIABLE FOR ANY LOSS OF PROFITS, LOSS OF USE, BUSINESS INTERRUPTION, LOSS OF DATA, COST OF COVER, OR INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY KIND IN CONNECTION WITH OR ARISING OUT OF ANY CLOUD SERVICES, OR ANY DELAY IN DELIVERY OR FURNISHING THE CLOUD SERVICES, WHETHER ALLEGED AS A BREACH OF CONTRACT OR TORTIOUS CONDUCT, INCLUDING NEGLIGENCE, EVEN IF BACKOFFICE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BACKOFFICE’S MAXIMUM AGGREGATE LIABILITY UNDER THIS AGREEMENT, (WHETHER IN CONTRACT, TORT OR ANY OTHER FORM OF LIABILITY) FOR DAMAGES OR LOSS, HOWSOEVER ARISING OR CAUSED, WHETHER OR NOT ARISING FROM BACKOFFICE’S NEGLIGENCE, SHALL IN NO EVENT, EXCEED THE FEES PAID BY CUSTOMER TO BACKOFFICE UNDER THIS AGREEMENT. THE FOREGOING LIMITATIONS OF LIABILITY SHALL NOT APPLY TO ANY LOSS OR LIABILITY ARISING FROM EITHER PARTY’S GROSS NEGLIGENCE OR WILLFUL MISCONDUCT.</li>
+                        <li class="outline13">2. The provisions of this Section 13 allocate risks under this Agreement between Customer and BackOffice. BackOffice’s pricing reflects this allocation of risk and limitation of liabilities.</li>
+                        <li class="outline13">3. No employee, agent, representative, or affiliate of BackOffice has authority to bind BackOffice to any oral representations or  warranty concerning any Applicable Offering. Any written representation or warranty not expressly contained in this Agreement will be void and unenforceable.</li>
+                    </ul>
+                </li>
+                <li>Audit Rights. Customer shall keep and maintain full, accurate and detailed records regarding the access and the number of end users of the Cloud Services. BackOffice or its representatives shall be entitled to review and audit such books and records and/or Customer’s compliance with the provisions of this Annex at no expense to Customer from once per year either in person or remotely during normal business hours upon prior notice of at least thirty (30) days to Customer.</li>
+                <li>Assignment. Neither this Agreement nor any rights under this Agreement may  be assigned or otherwise transferred by Customer, in whole or in part, whether voluntary or by operation of law, including by way of sale of assets, merger or consolidation, without the prior written consent of BackOffice. Subject to the foregoing, this Agreement will be binding upon and will inure to the benefit of the parties and their respective successors and assigns. Notwithstanding the foregoing, no transfer or assignment of Customer’s rights hereunder shall be effective unless and until (ii) Customer has paid and remains current on all amounts due hereunder, and (ii) the purported assignee agrees in writing to be bound by all of the obligations of Customer hereunder.</li>
+                <li>Notice. Any notice required or permitted under the terms of this Agreement or required by law must be in writing and must be (i) delivered in person, (ii) sent by registered mail, return receipt requested or (iii) sent by overnight air courier. Either Party may change its address for notice by written notice to the other Party. Notices will be considered to have been given at the time of actual delivery in person, three (3) business days after posting, or one days after delivery to an overnight air courier service.</li>
+                <li>Force Majeure. In the event either Party is unable to perform any of its obligations under this Agreement because of terrorist acts, acts of war, acts of God, fire, storms, accidents, actions or decree of government bodies or communication line failure not the fault of the affected Party or any event beyond its reasonable control, the Party who has been so affected immediately shall give notice to the other Party and shall use its best effort to resume performance. Upon receipt of such notice, all obligations under this Agreement shall be immediately suspended. If the period of nonperformance exceeds ninety (90) days from receipt of the notice, the Party whose performance has not been affected may, by written notice, terminates this Agreement without further recourse. Payment for Services performed prior to the date performance is suspended shall not be excused.</li>
+                <li>Government Uses. This software program and/or documentation shall be deemed “commercial computer software” and is provided to the U.S. Government Agency subject to the limitations set forth in the Agreement. Notwithstanding, the Cloud Services are provided to the U.S. Government Agency with RESTRICTED RIGHTS and its supporting documentation is provided with LIMITED RIGHTS. Use, duplication, or disclosure by the United States Government is subject to the restrictions as set forth in FAR52.227-14 and DFAR252.227-7013 et seq. or the successor as appropriate. The Manufacturer is BackOffice Associates, LLC, 75 Perseverance Way, Hyannis, MA 02601.</li>
+                <li>Miscellaneous.
+                    <ul style="list-style-type:none">
+                        <li class="outline19">1. Waiver. Any waiver of the provisions of this Agreement or of a  Party’s rights or remedies under this Agreement must be in writing to be effective. Failure, neglect or delay by a Party to enforce the provisions of this Agreement or its rights or remedies at any time will not be construed to be deemed a waiver of such Party’s rights under this Agreement and will not in any way affect the validity of the whole or any part of this Agreement or prejudice such Party’s right to take subsequent action.</li>
+                        <li class="outline19">2. Severability. If any term, condition or provision in this Agreement is found to be invalid, unlawful or unenforceable to any extent, the Parties shall endeavor in good faith to agree to such amendments that will preserve, as far as possible, the intentions expressed in this Agreement. If the Parties fail to agree on such an amendment, such invalid term, condition or provision will be severed from  the remaining terms, conditions and provisions, which will continue to be valid and enforceable to the fullest extent permitted by law.</li>
+                        <li class="outline19">3. Applicable Law/Language. This Agreement will be governed by and interpreted in accordance with the laws of the Commonwealth of Virginia, without regard to conflicts of law principles thereof or to the United Nations Convention on the International Sale of Goods. For purposes of all claims brought under this Agreement, each of the Parties hereby irrevocably submits to the exclusive jurisdiction of the commonwealth district located in Fairfax County, Virginia and/or the United States District Court of the Eastern District Court Eastern District of Virginia (Alexandria Division). To that end, each Party irrevocably consents to the exclusive jurisdiction of, and venue in, such court(s), and waives any, (i) objection it may have to any proceedings brought in any such court, (ii) claim that the proceedings have been brought in an inconvenient forum, and (iii) right to object (with respect to such proceedings) that such court does not have jurisdiction over such Party. Without limiting the generality of the foregoing, Customer consents to the service of process in connection with any such claim or dispute by the mailing thereof by registered or certified mail, postage prepaid to Customer, at the address for notice set forth in, or designated pursuant to, this Agreement. To the fullest extent permitted by law, each Party hereby expressly waives (on behalf of itself and on behalf of any person or entity claiming through such Party) any right to a trial by jury in any action, suit, proceeding, or counterclaim of any kind arising out of or in any manner connected with this Agreement or the subject matter hereof.</li>
+                        <li class="outline19">4. Attorney’s Fees. Should BackOffice be required to bring any action to enforce its rights under this Agreement, then in addition to all other remedies available to it, BackOffice is entitled to payment of all costs and attorney’s fees expended in enforcing its rights under this Agreement.</li>
+                        <li class="outline19">5. Headings. Headings herein are for convenience of reference only and shall in no way affect the interpretation of the Agreement.</li>
+                        <li class="outline19">6. Entire Agreement. This Agreement (including but not limited to the Orders, Annex(es) and any addenda hereto signed by both Parties) contains the entire agreement of the parties with respect to the subject matter of this Agreement and supersedes all previous communications, representations, understandings and agreements, either oral or written, between the parties with respect to said subject matter.</li>
+                        <li class="outline19">7. Counterparts. This Agreement may be executed in counterparts, each of which so executed will be deemed to be an original and such counterparts together will constitute one and the same Agreement. Signatures sent by facsimile or emailed to either Party in a PDF format shall be deemed original signatures under this Agreement.</li>
+                        <li class="outline19">8. Public Announcements/Publicity. Customer and BackOffice agree to cooperate regarding public relations activities, including public announcements, joint press releases, and other activities to be mutually agreed. Neither Party will perform such activities without the prior written consent of the other Party, which consent shall not be unreasonably withheld. Notwithstanding the foregoing, Customer acknowledges and agrees that BackOffice may state in presentation and sales materials that BackOffice is a service provider to Customer.</li>
+                        <li class="outline19">9. Customer Terms. No terms, provisions or conditions of any click-through agreement, purchase order, acknowledgement or other business form that Customer may use in connection with the provision of Services hereunder or the administration of this Agreement will have any effect on the rights, duties or obligations of the Parties, or otherwise modify this Agreement, regardless of any failure of BackOffice to object to such terms, provisions or conditions.</li>
+                    </ul>
+                </li>
+            </ol>
+                
+            <h2>EXHIBIT A</h2>
+            
+            <h3>INFORMATION GOVERNANCE CLOUD PLATFORM AND SOFTWARE HOSTING SERVICES SERVICE LEVELS</h3>
+            <p>This Service Level Exhibit describes the standard cloud-based services and support levels currently offered by BackOffice to its customers who have executed an Order to access the Information Governance Cloud Platform and/or the Software Hosting Services.</p>
+           <ol>
+               <li>Additional Definitions.
+                   <ol type="a">
+                       <li>“API” means the REST API interface.</li>
+                       <li>“Downtime” means the period of time when the Information Governance Cloud Platform and/or the Software Hosting Services is unavailable to the internet so that an authorized user is unable to submit samples and query the database through the Portal or the API. Downtime does not include the period of time when the Network is not available as a result of: (i) Scheduled Downtime or scheduled network, hardware, or service maintenance or upgrades; or (ii) the acts or omissions of Customer or Customer’s employees, agents, contractors, or vendors, or anyone gaining access to BackOffice’s network by means of Customer’s passwords or equipment; (iii) Customer requested changes; (v) any period of unavailability lasting less than five (5) minutes; or (vi) any unavailability caused by circumstances beyond BackOffice’s reasonable control, including without limitation, acts of God, strikes or other labor disturbances, war, whether declared or not, sabotage, and/or any other cause or causes, whether similar or dissimilar to those herein specified, which cannot reasonably be controlled by BackOffice, computer, telecommunications, internet service provider or hosting facility failures or delays involving hardware, software or power systems not within BackOffice’s possession or reasonable control, and including denial of service attacks against internet infrastructure providers.</li>
+                       <li>“Monthly Uptime Percentage” means the difference between the total number of minutes in a calendar month and the total number of minutes of Downtime that is reported by a Customer, divided by the total number of minutes in that calendar month.</li>
+                       <li>“Network” means the Portal and the API.</li>
+                       <li>“Portal” means web-based portal access to the Information Governance Cloud Platform and/or the Software Hosting Services.</li>
+                       <li>“Scheduled Downtime” means: (i) Downtime within pre-established maintenance windows; or (ii) Downtime during a major version upgrade.</li>
+                       <li>“Service Credits” means an extension of the number of days of Service that may be added to Customer’s Service term at no additional charge to Customer. Service Credits may not be exchanged for, or converted to, monetary amounts.</li>
+                   </ol>
+               </li>
+               <li>99.5% Monthly Uptime Percentage.
+                    <ol type="a">
+                        <li>During the Subscription Term, BackOffice will use commercially reasonable efforts to maintain 99.5% Monthly Uptime Percentage with respect to the Information Governance Cloud Platform and/or the Software Hosting Services. In the event that BackOffice fails to meet the 99.5% Monthly Uptime Percentage, subject to the terms and conditions of this Exhibit, Customer shall be entitled to Service Credits based on the following metrics:
+                            <table style="width:100%; padding:15px; border:solid black 1px;border-collapse: collapse;">
+                                <tr>
+                                    <th>Monthly	Uptime Percentage</th>
+                                    <th>Monthly Reported Outage (Hours)</th> 
+                                    <th>Service Credit</th>
+                                </tr>
+                                <tr>
+                                    <td>Between 99.5% and 99.0%</td>
+                                    <td>More than 3.6 hours but less than 7.2 hours per month</td> 
+                                    <td>1 Service Credit</td>
+                                </tr>
+                                <tr>
+                                    <td>Between 98% and 99%</td>
+                                    <td>More than 7.2 hours but less than 14.4 hours per month</td> 
+                                    <td>2 Service Credit</td>
+                                </tr>
+                                <tr>
+                                    <td>Below 98%</td>
+                                    <td>More than 14.4 hours per month</td> 
+                                    <td>4 Service Credit</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>Should BackOffice fail to make the Information Governance Cloud Platform and/or the Software Hosting Services available as set forth in this Section (“SLA Noncompliance”) in a calendar month, Customer may continue to use the Information Governance Cloud Platform and/or the Software Hosting Services and, subject to the terms and conditions of this Exhibit, receive a single Service Credit for each SLA Noncompliance.</li>
+                    </ol>
+               </li>
+               <li>Eligibility Requirements. BackOffice’s obligation to provide the Service Credits is conditioned upon the following:
+                    <ol type="a">
+                        <li>Reporting. Customer must report Downtime to the BackOffice Support Desk within five (5) business days of the event. Any such request should contain a detailed description and account of the reported occurrence. All claims will be verified against BackOffice system records. Should BackOffice dispute any period of unavailability alleged by Customer, BackOffice will provide to Customer a record of Information Governance Cloud Platform and/or the Software Hosting Services availability for the applicable period. BackOffice will provide such records only in response to claims made by Customer in good faith.</li>
+                        <li>Agreement Compliance.  Customer must not be in material breach of the use restrictions expressly set forth in the Agreement.</li>
+                        <li>Payment Obligations.  Customer shall have paid all valid and undisputed invoices due under the Agreement.</li>
+                    </ol>
+               </li>
+               <li>SLA Exclusions.  This SLA shall not apply to performance or availability issues to the extent:
+                    <ol type="a">
+                        <li>Caused by Customer’s or a third-party’s hardware, network, or software;</li>
+                        <li>Caused by Customer’s use of the Services not in accordance with the Documentation; or</li>
+                        <li>Caused by Customer’s use in contradiction with written instructions from BackOffice’s support desk.</li>
+                    </ol>
+               </li>
+               <li>Chronic Breach. Should BackOffice in addition fail to make the Information Governance Cloud Platform and/or the Software Hosting Services available as set forth in Section above for three (3) consecutive calendar months, Customer may terminate the applicable Order by providing notice of termination in accordance with the Agreement, in which case BackOffice will refund to Customer any prepaid fees for the remainder of the Subscription Term following the date of termination. The remedies described in this paragraph shall be the sole remedies available to Customer for SLA Noncompliance.</li>
+           </ol>
+    
+            <h2>EXHIBIT B</h2>
+            
+            <h3>UNIVERSAL CONNECT SERVICES END USER TERMS AND CONDITIONS</h3>
+            <ol type="1">
+                <li>Additional Definitions.
+                    <ol type="a">
+                        <li>“Affiliate” means any legal entity controlling, controlled by, or under common control with a party to these End User Terms, for so long as such control relationship exists.</li>
+                        <li>“End User Terms” means the terms and conditions set forth in this Exhibit B.</li>
+                        <li>“Personal Data” means any information or data that is submitted by Customer to the Universal Connect Services and relates to an identified or identifiable natural person or data considered to be personal data as defined under Privacy Laws, and which is received, accessed and/or processed by BackOffice in the capacity of ‘processor’ acting on behalf of Customer, as ‘controller’, in connection with the performance of the Universal Connect Services under these End User Terms.</li>
+                        <li>“Privacy Laws” means any applicable law, statute, directive or regulation regarding privacy, data protection, and/or the processing of Personal Data to which BackOffice and/or the Customer are subject and which is applicable to the parties’ data protection obligations under these End User Terms.</li>
+                    </ol>
+                </li>
+                <li>Scope of License.
+                    <ol type="a">
+                        <li>License Grant. Subject to the terms of these End User Terms, BackOffice grants to Customer, and Customer accepts a non- exclusive, non-transferable (except as otherwise set forth herein) and non-sublicensable license to access and use the quantities of the Universal Connect Services identified in the applicable Order to support the internal business operations of itself and its Affiliates solely in conjunction with BackOffice’s software applications, and for the duration of the term with Customer. If any Software delivered to Customer for Customer’s installation and use on its own equipment is provided in connection with the Universal Connect Services, the license duration for such Software shall be for the term stated on the applicable Order. All rights not specifically granted by BackOffice hereunder are hereby reserved by BackOffice.</li>
+                        <li>Evaluation Use. If the Universal Connect Services are to be used by Customer for evaluation purposes, or if access to the Universal Connect Services is otherwise obtained from BackOffice for evaluation purposes, such as a free trial, Customer shall be granted a right to use the Universal Connect Services solely for Customer’s own non-production, internal evaluation purposes (an “Evaluation Right”). Each Evaluation Right shall be granted for an evaluation period of up to sixty (60) days (subject to BackOffice’s right to terminate the Evaluation Right in BackOffice’s sole discretion at any time) from the date of delivery of the credentials need to access the applicable Universal Connect Services, plus any extensions granted by BackOffice in writing (the "Evaluation Period"). There is no fee for an Evaluation Right during the Evaluation Period, however, Customer is responsible for any fees which may be associated with usage beyond the scope permitted herein. Notwithstanding anything otherwise set forth in these End User Terms, Customer understands and agrees that Evaluation Rights are provided ‘AS IS’ and that BackOffice does not provide warranties or Support Services for Evaluation Rights.</li>
+                        <li>Use by Third Parties. Customer may allow its services vendors and contractors (each, a “Third Party User”) to access and use the Universal Connect Services made available to Customer hereunder solely for purposes of providing services to Customer, provided that Customer ensures that (i) the Third Party User’s access to or use of the Universal Connect Services is subject to the restrictions and limitations contained in these End User Terms, and the applicable Order(s), (ii) the Third Party User cooperates with BackOffice during any compliance review, and (iii) the Third Party User promptly removes any Software installed on its computer equipment, environment, and the integrated system(s) upon the completion of the Third Party User’s need for access or use as permitted by this Section. Customer agrees that it shall be liable to BackOffice for those acts and omissions of its Third Party Users as if they were done or omitted by Customer itself.</li>
+                        <li>Proprietary Rights. Customer understands and agrees that (i) the Universal Connect Services are protected by copyright and other intellectual property laws and treaties, (ii) BackOffice, its Affiliates and/or its licensors own the copyright, and other intellectual property rights in the Universal Connect Services, (iii) these End User Terms does not grant Customer any rights to BackOffice’s or its licensor’s trademarks or service marks or to any trademarks or service marks found in the Documentation, and (iv) BackOffice, its licensors and their respective Affiliates reserve any and all rights, implied or otherwise, which are not expressly granted to Customer in these End User Terms.</li>
+                    </ol>
+                </li>
+                <li>BackOffice may suspend Customer’s use of the Universal Connect Services (a) if so required by law enforcement or legal process, (b) in the event of an imminent security risk to BackOffice, its licensors or its customers, or (c) if continued use would subject BackOffice or its licensors to material liability. BackOffice shall make commercially reasonable efforts under the circumstances to provide prior notice to Customer of any such suspension.</li>
+                <li>High-Risk Disclaimer. CUSTOMER UNDERSTANDS AND AGREES THAT THE UNIVERSAL CONNECT SERVICES ARE NOT FAULT-TOLERANT AND ARE NOT DESIGNED OR INTENDED FOR USE IN ANY HIGH-RISK OR HAZARDOUS ENVIRONMENT, INCLUDING WITHOUT LIMITATION, THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION, AIR TRAFFIC CONTROL, LIFE SUPPORT MACHINES, WEAPONS SYSTEMS, OR ANY OTHER APPLICATION WHERE THE FAILURE OR MALFUNCTION OF ANY PRODUCT CAN REASONABLY BE EXPECTED TO RESULT IN DEATH, PERSONAL INJURY, SEVERE PROPERTY DAMAGE OR SEVERE ENVIRONMENTAL HARM (A “HIGH RISK ENVIRONMENT”). ACCORDINGLY, (I) CUSTOMER SHOULD NOT USE THE UNIVERSAL CONNECT SERVICES IN A HIGH-RISK ENVIRONMENT, (II) ANY USE OF THE UNIVERSAL CONNECT SERVICES BY CUSTOMER IN A HIGH RISK ENVIRONMENT IS AT CUSTOMER’S OWN RISK, (III) BACKOFFICE AND ITS AFFILIATES AND ITS LICENSORS/SUPPLIERS WILL NOT BE LIABLE TO CUSTOMER IN ANY WAY FOR USE OF THE UNIVERSAL CONNECT SERVICES IN A HIGH RISK ENVIRONMENT, AND (IV) NEITHER BACKOFFICE NOR ITS LICENSOR(S) MAKES ANY WARRANTIES OR ASSURANCES, EXPRESS OR IMPLIED, REGARDING USE OF THE UNIVERSAL CONNECT SERVICES IN A HIGH RISK ENVIRONMENT.</li>
+                <li>Limitation of Liability.
+                    <ol type="a">
+                        <li>EXCEPT FOR (A) ANY BREACH OF SECTIONS 2 OR 6 OF THESE END USER TERMS, (B) ANY LIABILITY AND OBLIGATIONS ARISING UNDER THE INFRINGEMENT INDEMNITY SECTION OF THESE END USER TERMS OR (C) ANY LIABILITY TO THE EXTENT LIABILITY MAY NOT BE EXCLUDED OR LIMITED AS A MATTER OF APPLICABLE LAW, IN NO EVENT SHALL EITHER PARTY, OR THEIR RESPECTIVE AFFILIATES, BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL LOSS OR DAMAGE OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF REVENUE, LOSS OF ACTUAL OR ANTICIPATED PROFITS, LOSS OF BUSINESS, LOSS OF CONTRACTS, LOSS OF GOODWILL OR REPUTATION, LOSS OF ANTICIPATED SAVINGS, LOSS OF, DAMAGE TO OR CORRUPTION OF DATA HOWSOEVER ARISING, WHETHER SUCH LOSS OR DAMAGE WAS FORESEEABLE OR IN THE CONTEMPLATION OF THE PARTIES AND WHETHER ARISING IN OR FOR BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF STATUTORY DUTY, OR OTHERWISE.</li>
+                        <li>EXCEPT FOR (A) ANY BREACH OF SECTIONS 2 OR 6 OF THESE END USER TERMS, OR ANY OTHER VIOLATION OF THE OTHER PARTY’S INTELLECTUAL PROPERTY RIGHTS; (B) ANY LIABILITY AND OBLIGATIONS ARISING UNDER THE INFRINGEMENT INDEMNITY SECTION OF THESE END USER TERMS; (C) EITHER PARTY’S COSTS OF COLLECTING MATERIALLY DELINQUENT AMOUNTS WHICH ARE NOT THE SUBJECT OF A GOOD FAITH DISPUTE; OR (D) ANY LIABILITY TO THE EXTENT SUCH LIABILITY MAY NOT BE EXCLUDED OR LIMITED AS A MATTER OF APPLICABLE LAW, THE MAXIMUM AGGREGATE AND CUMULATIVE LIABILITY OF EITHER PARTY AND ITS AFFILIATES TO THE OTHER PARTY, WHETHER ARISING IN OR FOR BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF STATUTORY DUTY, OR OTHERWISE, SHALL NOT EXCEED ONE HUNDRED THOUSANDS DOLLARS ($100,000). CONDUCT VIOLATING THE LICENSE SCOPE OR LICENSE LIMITS HEREUNDER IS NOT SUBJECT TO LIABILITY LIMITS HEREIN. THE PARTIES AGREE THAT THESE LIMITATIONS OF LIABILITY ARE AGREED ALLOCATIONS OF RISK CONSTITUTING IN PART THE CONSIDERATION FOR BACKOFFICE PROVIDING PRODUCTS AND SERVICES TO CUSTOMER, AND SUCH LIMITATIONS WILL APPLY NOTWITHSTANDING THE FAILURE OF THE ESSENTIAL PURPOSE OF ANY LIMITED REMEDY AND EVEN IF A PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LIABILITIES OR FAILURES.</li>
+                        <li>In no event may Customer bring any claim against a contractor, licensor, or supplier to BackOffice for a matter associated with BackOffice’s (or BackOffice’s supplier or contractor’s) performance of this contract, beyond the amounts and theories of liabilities permitted if such claim were asserted against BackOffice itself hereunder.</li>
+                    </ol>
+                </li>
+                <li>Conduct. Except and only to the extent that the exclusions and limits of this Section are prohibited by applicable law, Customer may not reverse engineer, decompile, disassemble, or attempt to discover or modify in any way the underlying source code of the Universal Connect Services, or any part thereof. In addition, Customer may not: (i) modify, translate, localize, adapt, rent, lease, loan, create or prepare derivative works of, or attempt to file a patent application based on the Universal Connect Services, documentation, or any part thereof; (ii) resell, sublicense or distribute the Universal Connect Services or documentation except as expressly permitted by these End User Terms; (iii) provide, make available to, or permit use of the Universal Connect Services, in whole or in part, by any third party except as expressly set forth herein or in the applicable order and subject to the requirements set forth in Section 2(c) above; (iv) use the Universal Connect Services or anything provided hereunder to create or enhance a competitive offering or for any other purpose which is competitive to BackOffice or its licensor(s), (v) perform any other act which would result in a misappropriation or infringement of BackOffice or its licensor(s)’ intellectual property rights in the Universal Connect Services or the Documentation (vi) attempt to use or gain unauthorized access to BackOffice’s, its licensors, or its supplier’s networks or equipment; (vii) probe, scan or test the vulnerability of the Universal Connect Services, or a system, account or network of BackOffice or any of BackOffice’s suppliers; (viii) engage in fraudulent, offensive or illegal activity; (ix) intentionally engage in any activity that infringes the intellectual property rights or privacy rights of any individual or third party or transmit through the Universal Connect Services any data or information without the legal right to do so; or (x) transmit unsolicited bulk or commercial messages or intentionally distribute worms, Trojan horses, viruses, corrupted files or any similar items; or (xi) restrict, inhibit, interfere or attempt to interfere with the ability of any other person to use or enjoy the Universal Connect Services or a user’s network, or cause a performance degradation to any facilities used to provide the Universal Connect Services. Notwithstanding anything otherwise set forth in these End User Terms, the terms and restrictions set forth herein shall not prevent or restrict Customer from exercising additional or different rights to any open source software that may be contained in or provided with the Universal Connect Services in accordance with the applicable open source licenses. Customer may not use any license keys or other license access devices not provided by BackOffice, including but not limited to “pirate keys”, to install or access the Universal Connect Services.</li>
+                <li>Personal Data. BackOffice, its Affiliates and licensors will have no liability to Customer for any breach of this Section resulting from BackOffice’s, its Affiliates’ and/or licensors’ compliance with Customer’s system configurations or instructions with respect to the Personal Data. Customer acknowledges that BackOffice, its Affiliates and licensors does not sell a data storage service. Customer retains responsibility for all data that Customer integrates through the Universal Connect Services, and Customer – not BackOffice, its Affiliates and licensors – is responsible for ensuring that the data subjects (who the data pertains to) of any data transmitted by Customer have consented to the processing of the Personal Data by BackOffice, its Affiliates and licensors. Except as permitted herein or to the extent required by Privacy Laws or legal process, BackOffice, its Affiliates and licensors will implement reasonable and appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including to prevent unauthorized disclosure of or access to Personal Data by third parties, and will only store and process Personal Data as required to fulfill its obligations under these End User Terms and any applicable orders and/or as required by the Privacy Laws. Each party will comply with the Privacy Laws that are applicable to it in relation to the processing of Personal Data under these End User Terms. BackOffice will notify Customer without undue delay after becoming aware of any disclosure of or access to the Personal Data by a third party in breach of this Section and will reasonably cooperate with Customer to reasonably remediate the effects of such disclosure or access. Customer authorizes BackOffice, in connection with the provision of the Universal Connect Services, or in the normal course of business, to make worldwide transfers of Personal Data to its subprocessors (any processor (including without limitation an Affiliate and/or subcontractor) engaged by BackOffice, who agrees to receive from BackOffice, or from another BackOffice sub-processor, Personal Data exclusively intended for processing activities to be carried out on behalf of the Customer under the terms of these End User Terms and the written subcontract). When making such transfers, BackOffice will ensure appropriate protection is in place to safeguard the Personal Data transferred under or in connection with these End User Terms. Customer’s exclusive remedy and BackOffice’s sole obligation for any breach of this Personal Data section will be for BackOffice to pay or reimburse Customer for (a) the reasonable costs of notification, credit monitoring, and call center support, each to the extent made necessary by the breach and required by applicable law and (b) any governmental fines assessed against Customer to the extent incurred as a result of the breach. Customer hereby (i) represents that it has the right to transfer the Personal Data to BackOffice, its Affiliates and licensors, and (ii) instructs BackOffice, its Affiliates and licensors to process the Personal Data for the purposes of performing its obligations and complying with its rights under these End User Terms and any applicable orders. Customer agrees that Personal Data may be sent to BackOffice’s third-party service providers as part of support services and therefore authorizes BackOffice to appoint and use subprocessors where necessary for the provision of the Universal Connect Services. Customer understands that if Customer configures Universal Connect Services to move data from one point to another, that Customer is responsible to ensure that Customer is rightfully integrating data among connected systems, whether Customer transmits data outside of a particular cloud or system, outside of a particular geography, or otherwise. Customers are responsible to set applicable purge data settings and to configure Universal Connect Services in a manner that best fits Customer’s security needs.</li>
+            </ol>
+            </div>
+            <form class="modalForm"> 
+                <div class="form-check form-row align-items-center">
+                    
+                    <input name="terms" type="checkbox" tabindex="0" required id="yesno" disabled aria-describedby="termsLink" class="form-check-input">
+                    
+                    <label class="form-check-label" for="yesno">I agree to the terms and conditions</label>
+                    <span id="yesnoFeedback" class="form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" id="register" disabled class="btn btn-info">Submit Information</button>
+                </div>
+                <div class="col-auto">
+                    <button type="button" id="print" class="btn btn-secondary" onclick="printDiv('terms')" value="print a div!">Print the Terms Agreement</button>
+                </div>
+            </form>
+    </div>
+    </div>
+    <nav class="navbar fixed-bottom">
+        <a class="navbar-brand" href="#"><img class="footerLogo" src="BOA_White.svg" /></a>
+    </nav>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+<script>
+    $(document).ready(function(){
+        $('#terms').scroll(function () {
+
+            if ($(this).scrollTop() >= $(this)[0].scrollHeight - Math.floor($(this).height()) - 1) {
+                console.log("hit bottom");
+
+                $('#yesno').removeAttr('disabled');
+            }
+        });
+
+        $('#yesno').change(function () {
+            $('#register').prop("disabled", !this.checked);
+        }).change()
+
+    });
+
+    function printDiv(terms) {
+        var printPopup;
+
+        if (/*@ccon!@*/false || !!document.documentMode) {
+            printPopup = window.open("NACSTCv2.0.pdf");
+            //printPopup.window.print();
+        } else {
+            printPopup = document.createElement("div");
+
+            printPopup.id = "printpopup";
+            printPopup.innerHTML = document.getElementById('terms').innerHTML;
+
+            document.body.appendChild(printPopup);
+
+            window.print();
+
+            document.body.removeChild(printPopup);
+        }
+    }
+
+</script>
+  </body>
+</html>
